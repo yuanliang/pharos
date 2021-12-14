@@ -1,0 +1,26 @@
+version: "3"
+services:
+  pharos:
+    image: kramat/pharos
+    env_file:
+      - ../.env
+    environment:
+      PHAROS_DB_HOST: db
+    depends_on:
+      - db
+    ports:
+      - ${PHAROS_PORT}:${PHAROS_PORT}
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${PHAROS_DB_USER}
+      POSTGRES_PASSWORD: ${PHAROS_DB_PASSWORD}
+      POSTGRES_DB: ${PHAROS_DB_NAME}
+    ports:
+      - ${PHAROS_DB_PORT}:${PHAROS_DB_PORT}
+    volumes:
+      - postgresql:/var/lib/postgresql/pharos
+      - postgresql_data:/var/lib/postgresql/pharos/data
+volumes:
+  postgresql: {}
+  postgresql_data: {}
