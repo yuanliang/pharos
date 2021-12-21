@@ -47,7 +47,14 @@ require github.com/gin-gonic/gin v1.7.7
 go mod tidy
 ```
 
-前端应用
+服务端启动
+
+```bash
+cd scripts
+./deploy.sh
+```
+
+前端启动
 
 ```bash
 cd app
