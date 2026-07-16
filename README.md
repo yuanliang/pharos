@@ -1,6 +1,6 @@
 # PHAROS
 
-This a simple web blog created by using React for frontend and Gin (Golang) framework for backend. This repository is created as a support for the [guide](https://yuanliang.run/golan_gin_react_esbuild_blog_1/)
+This is a simple web blog created by using React for frontend and Gin (Golang) framework for backend. This repository is created as a support for the [guide](https://yuanliang.run/golan_gin_react_esbuild_blog_1/)
 
 一个简单的博客程序，包含注册、登陆、发帖、浏览模块。使用 `Golan` `Gin` `Typescript` `React` `Esbuild` `PostgreSQL` `bootstrap5.3` 仅供学习参考。[详细教程](https://yuanliang.run/golan_gin_react_esbuild_blog_1/)
 
